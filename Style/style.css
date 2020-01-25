@@ -1,0 +1,525 @@
+*{
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* My Fonts */
+@font-face{
+    font-family: Heading;
+    src: url(../Fonts/Satisfy-Regular.ttf);
+}
+@font-face{
+    font-family:Paragraph;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+p{
+    color:#777777;
+    line-height: 23px;
+    font-family: Paragraph;
+    font-size: 13px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Heading;
+    font-weight: lighter;
+}
+a{
+    font-family: Paragraph;
+    font-size: 12px;
+}
+
+/* Start Navbar */
+.navbar{
+    width: 100%;
+    overflow: auto;    
+    z-index: 999;
+    padding: 1% 0px;
+    position: fixed;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.425);
+}
+.navbar .navbar__container{
+    width: 66%;
+    margin:0 auto;
+}
+/* Navbar Logo */
+.navbar .navbar__container .navbar__logo{
+    float: left;
+    width: 25%;
+}
+.navbar .navbar__container .navbar__logo img{
+    width: 28%;
+}
+/* Navbar Links */
+.navbar .navbar__container .navbar__links{
+    width: 50%;
+    text-align: center;
+    margin-top: 2.5%;
+    float: left;
+}
+.navbar .navbar__container .navbar__links li{
+    list-style: none;
+    display: inline;
+}
+.navbar .navbar__container .navbar__links li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 2%;
+    font-family: Paragraph;
+}
+.navbar .navbar__container .navbar__links li a:hover{
+    color: #ffc000;
+}
+/* Navbar Search Button */
+.navbar .navbar__container .navbar__btn-search{
+    width: 25%;
+    float: right;
+    margin-top: 1.5%;
+}
+.navbar .navbar__container .navbar__btn-search .btn__container{
+    padding: 5% 1%;
+    float: right;
+    border: 1px solid white;
+    width: 15%;
+    cursor: pointer;
+    background-color: transparent;
+}
+.navbar .navbar__container .navbar__btn-search .btn__container img{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+/* Hero Section */
+.hero__section{
+    background-image: url("../Assets/header.png");
+    width: 100%;
+    height: 118vh;
+    background-position:top ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero__section .hero__section-container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 18%;
+}
+.hero__section h1{
+    text-align: center;
+    color: white;
+    font-family: Heading;
+    font-size: 80px;
+}
+
+/* start Recipe Section*/
+
+/* start Recipe Cards*/
+.recipe{
+    width: 100%;
+}
+.recipe .recipe__container{
+    width: 68%;
+    margin: 0 auto;
+    padding: 8% 0px 9% 0px;
+}
+.recipe .recipe__container .recipe__card{
+    width: 32%;
+    text-align: center;
+    float: left;
+    margin: 0px 0.66%;
+}
+.recipe .recipe__container .recipe__card .recipe__img{
+    margin: 17% 0px;
+}
+.recipe .recipe__container .recipe__card .recipe__img img{
+    width: 60%;
+}
+.recipe .recipe__container .recipe__card h2{
+    margin-bottom: 5%;
+    font-family: Heading;
+}
+.recipe .recipe__container .recipe__card p{
+    margin-bottom: 2%;
+}
+.recipe .recipe__container .recipe__card .recipe__btn{
+    border: 1px solid #ffc000;
+    border-radius: 30px;
+    padding: 4%;
+    width: 50%;
+    display: block;
+    margin: 10% auto;
+}
+.recipe .recipe__container .recipe__card .recipe__btn h6{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: normal;
+}
+.recipe .recipe__container .recipe__card .recipe__btn:hover{
+    background-color: #ffc000 ;
+    color: white;
+}
+/* End Recipe Cards*/
+
+/* start Recipe Videos*/
+.recipe .recipe__container .recipe__videos{
+    width: 100%;
+    margin-top: 15%;
+    overflow: auto;
+}
+.recipe .recipe__container .recipe__videos .recipe__content{
+    width: 40%;
+    float: left;
+}
+.recipe .recipe__container .recipe__videos .recipe__content h2{
+    font-family: Heading;
+    font-size: 55px;
+}
+.recipe .recipe__container .recipe__videos .recipe__content .recipe__watch-video{
+    margin-top: 10%;
+}
+.recipe .recipe__container .recipe__videos .recipe__content .recipe__watch-video .icon{
+    display: inline;
+    object-fit: contain;
+}
+.recipe .recipe__container .recipe__videos .recipe__content .recipe__watch-video .icon img{
+    width: 20%;
+    float: left;
+    object-fit: contain;
+}
+.recipe .recipe__container .recipe__videos .recipe__content .recipe__watch-video .icon__content{
+    float: left;
+    margin: 2% 4%;
+}
+.recipe .recipe__container .recipe__videos .recipe__content .recipe__watch-video .icon__content h5{
+    font-family: Heading;
+    font-size: 22px;
+}
+.recipe .recipe__container .recipe__videos .recipe__photos{
+    width: 50%;
+    float: right;
+    position: relative;
+    padding-bottom: 20%;
+}
+.recipe .recipe__container .recipe__videos .recipe__photos .big__photo img{
+    width: 80%;
+    float: right;
+    object-fit: contain;
+}
+.recipe .recipe__container .recipe__videos .recipe__photos .small_photo-left{
+    position: absolute;
+    top:12%;
+    left: 4%;
+}
+.recipe .recipe__container .recipe__videos .recipe__photos .small_photo-right{
+    position: absolute;
+    top:52%;
+    right:6%;
+}
+.recipe .recipe__container .recipe__videos .recipe__photos .small_photo-left img{
+    width: 75%;
+    object-fit: contain;
+}
+.recipe .recipe__container .recipe__videos .recipe__photos .small_photo-right img{
+    width: 75%;
+    object-fit: contain;
+}
+/* End Recipe Videos */
+
+/* Start Birthday Casting */
+.recipe .recipe__container .birthday__casting{
+    width: 100%;
+}
+.recipe .recipe__container .birthday__casting .birthday__big-container{
+    border-radius: 10px;
+    float: left;
+    width: 28%;    
+    position: relative;
+    padding-top: 8%;
+    margin: 0 24px;
+}
+.recipe .recipe__container .birthday__casting .birthday__big-container .birthday__image{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 1%;
+    left: 19%;
+}
+.recipe .recipe__container .birthday__casting .birthday__big-container .birthday__image img{
+    width: 80%;
+    object-fit: contain;
+}
+.recipe .recipe__container .birthday__casting .birthday__big-container .birthday__card .card__container{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 50% 10% 10% 10%;
+    text-align: center;
+}
+.recipe .recipe__container .birthday__casting .birthday__big-container .birthday__card .card__container h3{
+    font-size: 22px;
+}
+.recipe .recipe__container .birthday__casting .birthday__big-container .birthday__card .card__container p{
+    margin-top: 12%;
+}
+/* End of recipe */
+
+/* Start Trending Recipes */
+.trending__recipes{
+    width: 100%;
+    background-image: url("../Assets/banner.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    overflow: auto;
+}
+.trending__recipes .trending__recipes-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3% 0px 3% 0px;
+}
+.trending__recipes .trending__recipes-container .trending__recipes-content{
+    margin-top: 10%;
+}
+.trending__recipes .trending__recipes-container .trending__recipes-content p{
+    font-size: 10px;
+    margin-bottom: 2%;
+}
+.trending__recipes .trending__recipes-container .trending__recipes-content h3{
+    font-size: 50px;
+    margin-bottom: 7%;
+}
+.trending__recipes .trending__recipes-container .trending__recipes-content .trending__recipes-btn{
+    background-color: #ffc000 ;
+    border-radius: 30px;
+    padding: 1.5%;
+    width: 22%;
+    display: block;
+    margin: 10% auto;
+    cursor: pointer;
+}
+.trending__recipes .trending__recipes-container .trending__recipes-content .trending__recipes-btn a{
+    color: white;    
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Paragraph;
+}
+/* End of Trending Recipes */
+
+ /* Start Feedback */
+ .feedback{
+    width: 100%;
+    margin: 10% 0 1% 0;
+ }
+ .feedback .feedback__container{
+     width: 50%;
+     display: block;
+     margin: 0 auto;
+     margin-bottom: 2%;
+}
+.feedback .feedback__container .feedback__content{
+     text-align: center;
+     margin-bottom: 2%;
+}
+.feedback .feedback__container .feedback__content h2{
+    font-size: 48px;
+    margin-bottom: 3%;    
+}
+.feedback .feedback__container .feedback__content p{
+    font-size: 12px;
+}
+.feedback .feedback__container-cards{
+    width: 68%;
+    display: block;
+    margin: 0 auto;
+}
+.feedback .feedback__container-cards .card{
+    width: 46%;
+    float: left;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding:3%;
+    margin: 0px 2%;
+}
+.feedback .feedback__container-cards .card .card__img{
+    float: left;
+}
+.feedback .feedback__container-cards .card .card__img img{
+    width: 80%;
+}
+.feedback .feedback__container-cards .card .card__content{
+    margin-left: 28%;
+}
+.feedback .feedback__container-cards .card .card__content h6{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.feedback .feedback__container-cards .card .card__content p{
+    font-size: 12px;
+    margin-bottom: 3%;
+}
+.feedback .feedback__stepper{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 10%;
+    text-align: center;
+}
+.feedback .feedback__stepper span{
+    background-color: #ffc000;
+    width: 15%;
+    padding: 1.5%;
+    margin: 0 9%;
+    float: left;
+    cursor: pointer;
+}
+.feedback .feedback__stepper span:nth-child(2){
+    background-color: #eee;
+}
+.feedback .feedback__stepper span:nth-child(3){
+    background-color: #eee;
+}
+ /* End Of Feedback */
+
+/* Start Download app Section*/
+.recipe .recipe__container .recipe__download {
+    width: 100%;
+}
+.recipe .recipe__container .recipe__download .recipe__photos-left{
+    width: 50%;
+    position: relative;
+    padding-bottom: 9%;
+    float: left;
+}
+.recipe .recipe__container .recipe__download .recipe__photos-left .big__photo img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    object-fit: contain;    
+}
+.recipe .recipe__container .recipe__download .recipe__photos-left .small_photo-left img{
+    position: absolute;
+    top: 10%;
+    width: 30%;
+    object-fit: contain;   
+}
+.recipe .recipe__container .recipe__download .recipe__photos-left .small_photo-right img{
+    position: absolute;
+    width: 30%;
+    bottom: 0%;
+    right: 20%;
+    object-fit: contain;   
+}
+.recipe .recipe__container .recipe__download .recipe__content-right{
+    float: right;
+    width: 50%;
+}
+.recipe .recipe__container .recipe__download .recipe__content-right .content__wrapper{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.recipe .recipe__container .recipe__download .recipe__content-right .content__wrapper h2{
+    margin-top: 15%;
+    margin-bottom: 1%;
+    font-size: 55px;
+}
+.recipe .recipe__container .recipe__download .recipe__content-right .content__wrapper img{
+    float: left;
+    width: 40%;
+    margin: 3%;
+    cursor: pointer;
+}
+/* End Download app Section*/
+
+/* Start Footer */
+.footer{
+    width: 100%;
+    background-color: black;
+    padding: 8% 0 8% 0;
+}
+.footer .footer__container{
+    width:80%;
+    display: block;
+    margin: 0 auto;
+}
+.footer .footer__container .footer__content{
+    width: 14%;
+    float: left;
+    text-align: center;
+    margin-right: 3%;
+}
+.footer .footer__container .footer__content h3{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 25%;
+}
+.footer .footer__container .footer__content ul li a{
+    color: #919191;
+    text-decoration: none;
+}
+.footer .footer__container .footer__content ul li{
+    line-height: 35px;
+}
+.footer .footer__container .footer__content-subscribtions{
+    float: left;
+    width:30%;
+}
+.footer .footer__container .footer__content-subscribtions h3{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 14%;
+}
+.footer .footer__container .footer__content-subscribtions form{
+    margin-top: 17%;
+}
+.footer .footer__container .footer__content-subscribtions form input:nth-child(1){
+    padding-right: 15%;
+    float: left;
+    padding: 2% 18%;
+    padding-left: 10%;
+    background-color: #333333;
+    box-sizing: border-box;
+    border: none;
+}
+.footer .footer__container .footer__content-subscribtions form button{
+    width: 13%;
+    background-color: #ffc000;
+    border: none;
+    padding:3.5%;
+    cursor: pointer;
+}
+.footer .footer__container .footer__content-subscribtions form button img{
+    object-fit: contain;
+    width: 100%;
+
+}
+.footer .footer__container .copyright{
+    margin-left: 2%;
+    margin-top: 7%;
+}
+.footer .footer__container .copyright p{
+    display: inline;
+}
+.footer .footer__container .copyright span{
+    color: #ffc000 ;
+}
+.footer .footer__container .copyright .socail__links{
+    display: block;
+    float: right;
+    width: 50%;
+    margin: 0 3% 0 0;
+    box-sizing: border-box;
+}
+.footer .footer__container .copyright .socail__links ul li{
+    display: inline;
+}
+.footer .footer__container .copyright .socail__links ul li a img {
+    width: 6%;
+    margin: 0 auto;
+    margin: 0 1%;
+    float: right;
+    object-fit: contain;
+}
+/* End Footer */
